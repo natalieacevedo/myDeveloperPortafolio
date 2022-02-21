@@ -1,34 +1,65 @@
 //listeners to show text when user hover over images:
 
-const allSpanImages = document.querySelectorAll(".textAbilityHide");
-const allSkillsImages = document.querySelectorAll(".icon-card");
+// const allSpanImages = document.querySelectorAll(".textAbilityHide");
+// const allSkillsImages = document.querySelectorAll(".icon-card");
 
 
 
-console.log(allSkillsImages);
-console.log(allSpanImages);
+// console.log(allSkillsImages);
+// console.log(allSpanImages);
 
-function showSkill(e) {
-  e.preventDefault();
+// function showSkill(e) {
+//   e.preventDefault();
 
-  console.log("pepa");
-  allSpanImages.forEach((el) => {
-    el.classList.toggle("textShow");
-    e.stopPropagation();
-    console.log("si sirve");
-  });
-}
+//   console.log("pepa");
+//   allSpanImages.forEach((el) => {
+//     el.classList.toggle("textShow");
+//     e.stopPropagation();
+//     console.log("si sirve");
+//   });
+// }
 
-allSkillsImages.forEach((el) => {
+// allSkillsImages.forEach((el) => {
+//   el.addEventListener("mouseenter", (e) => {
+//     console.log(e.target);
+//     showSkill(e);
+//   });
+// });
+
+// allSkillsImages.forEach((el) => {
+//   el.addEventListener("mouseleave", (e) => showSkill(e));
+// });
+
+const allSkillsContainer = document.querySelectorAll('.container-skill');
+
+
+allSkillsContainer.forEach(el => {
   el.addEventListener("mouseenter", (e) => {
-    console.log(e.target);
-    showSkill(e);
-  });
+   
+    let spanChild = el.querySelector('.textAbilityHide');
+    console.log(spanChild);
+    spanChild.classList.toggle("textShow");
+    e.stopPropagation();
+
+
+  })
 });
 
-allSkillsImages.forEach((el) => {
-  el.addEventListener("mouseleave", (e) => showSkill(e));
+allSkillsContainer.forEach(el => {
+  el.addEventListener("mouseleave", (e) => {
+   
+    let spanChild = el.querySelector('.textAbilityHide');
+    console.log(spanChild);
+    spanChild.classList.toggle("textShow");
+    e.stopPropagation();
+
+
+  })
 });
+
+
+
+
 
 const scrollUp = document.getElementById("scroll-up");
 

@@ -74,6 +74,12 @@ nav h1{
 
 }
 
+.container-skill{
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+}
+
 nav a {
     color: var(--primary-color);
     transition: var(--transition);
@@ -193,12 +199,16 @@ nav ul li {
       display: inline;
       vertical-align: middle;
       display: inline-block;
-      position: relative;
-      right: 8rem;
+      position: absolute;
       font-weight: lighter;
-      color:gray;
-      margin-top: 1.5rem;
+      color: var(--secondary-color);
       z-index:-1;
+      text-align: center;
+      z-index: 2;
+      margin: 1rem auto;
+      left: 40%;
+    
+      
       
       
   }
@@ -368,6 +378,8 @@ nav ul li {
 /* media queries: */
 
 @media screen and (max-width: 720px) {
+
+    .textShow{font-size: 0.5rem;}
 
     .navigation.show{
         box-shadow: 0px 2px 15px 2px var(--primary-shadow);
