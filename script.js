@@ -3,6 +3,8 @@
 const allSpanImages = document.querySelectorAll(".textAbilityHide");
 const allSkillsImages = document.querySelectorAll(".icon-card");
 
+
+
 console.log(allSkillsImages);
 console.log(allSpanImages);
 
@@ -37,3 +39,20 @@ scrollUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+//hamburguer menu:
+const burguer = document.getElementById("burguer-menu");
+const ul = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
+const navLink = document.querySelectorAll(".nav-link");
+
+burguer.addEventListener("click", () => {
+  console.log("enferma");
+  ul.classList.toggle("show");
+});
+
+navLink.forEach((link) =>
+  link.addEventListener("click", () => {
+    ul.classList.remove("show");
+  })
+);
