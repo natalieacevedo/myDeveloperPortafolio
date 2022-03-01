@@ -397,9 +397,7 @@ nav ul li {
 
 @media screen and (max-width: 750px) {
 
-    .skills-wrapper{
-        column-count: 2;
-    }
+    
 
     .hidden{
         height: 22rem;
@@ -427,16 +425,17 @@ nav ul li {
         background-color: var(--bg-color);
         flex-direction: column;
         top: 5.375;
-        left: 10%;
+        left: 20%;
         width: 80%;
         text-align: center;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
+        gap: 1.5rem;
 
     }
 
     nav ul li {
-        margin: 8px;
+        margin: .3rem;
     }
 
     .burguer-menu {
