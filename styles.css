@@ -248,13 +248,22 @@ nav ul li {
 
   }
 
+  .project-detail{
+      text-align: left;
+  }
+
+  /* #kinder{
+      text-align: left;
+  } */
+
   .project-pic {
       width: 65%;
       height: 60%;
   }
 
   .sun{
-      width: 6.25rem;
+      width: 4vw;
+      /* height: 8vh; */
   }
 
   .projects-container {
@@ -292,7 +301,8 @@ nav ul li {
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
-    overflow: scroll;
+    /* overflow: scroll; */
+    
   }
   
   /* contact form */
