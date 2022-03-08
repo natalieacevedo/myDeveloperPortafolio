@@ -3,14 +3,14 @@
 
 :root {
   --font-family:'ABeeZee', sans-serif;
-    --normal-font: 400;
-    --bold-font: 700;
-    --bolder-font: 900;
-    --bg-color:  #F6F2F8;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color:  #F6F2F8;
   --primary-color:#4E937A;
   --secondary-color: #912F40;
   --primary-shadow: #849483;
-  --secondary-shadow: #A5EA71;
+  --second-shadow: #A5EA71;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -30,6 +30,8 @@ html {
     box-sizing: border-box;
 }
 
+
+
 ul {
     list-style-type: none;
 }
@@ -42,6 +44,8 @@ a {
     color: var(--primary-color);
 
 }
+
+
 
 a:hover {
     color: var(--secondary-color)
@@ -63,6 +67,8 @@ nav{
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
+
+
 
 .hero-img{
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
@@ -104,6 +110,10 @@ nav ul {
     gap: 1.9rem;
 }
 
+.navigation.show{
+    padding-top: 10vh;
+}
+
 nav ul li {
     font-weight: var(--bold-font);
 }
@@ -115,6 +125,10 @@ nav ul li {
     background-color: transparent;
     cursor: pointer;
     display: none;
+}
+
+.ionicon{
+    margin-top: -0.5rem;
 }
 
 .hero {
@@ -214,22 +228,20 @@ nav ul li {
       display: none;
   } 
 
+  
   .textShow{
-      display: inline;
+      
       vertical-align: middle;
       display: inline-block;
       position: absolute;
       font-weight: lighter;
       color: var(--secondary-color);
-      z-index:-1;
       text-align: center;
       z-index: 2;
       margin: 1rem auto;
-      left: 40%;
+      left: 42%;
+      
     
-      
-      
-      
   }
 
   .icon-card{
@@ -428,12 +440,24 @@ nav ul li {
         padding-top: 2.3vh;
     }
 
+    input, textarea{
+        padding-left: 1rem;
+    }
 
 /* media queries: */
 
 @media screen and (max-width: 750px) {
+    h1{
+        font-size: 1.2rem;
+    }
 
-    
+    .skills-wrapper{
+        column-count: 2;
+    }
+
+    .firstLink{
+        margin-top: 18vh;
+    }
 
     .hidden{
         height: 22rem;
@@ -490,7 +514,7 @@ nav ul li {
 
     .hero img {
         
-        margin-top: 10vh;
+        margin-top: 7vh;
         width: 20.5rem;
         object-fit: contain;
         height: 25.5rem;  
@@ -563,7 +587,7 @@ nav ul li {
 
     .hero img {
         height: 17.5rem;
-        width: 8rem;
+        width: 12;
         object-fit: contain;
         box-shadow: none;
       }

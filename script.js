@@ -1,65 +1,22 @@
-//listeners to show text when user hover over images:
+const allSkillsContainer = document.querySelectorAll(".container-skill");
 
-// const allSpanImages = document.querySelectorAll(".textAbilityHide");
-// const allSkillsImages = document.querySelectorAll(".icon-card");
-
-
-
-// console.log(allSkillsImages);
-// console.log(allSpanImages);
-
-// function showSkill(e) {
-//   e.preventDefault();
-
-//   console.log("pepa");
-//   allSpanImages.forEach((el) => {
-//     el.classList.toggle("textShow");
-//     e.stopPropagation();
-//     console.log("si sirve");
-//   });
-// }
-
-// allSkillsImages.forEach((el) => {
-//   el.addEventListener("mouseenter", (e) => {
-//     console.log(e.target);
-//     showSkill(e);
-//   });
-// });
-
-// allSkillsImages.forEach((el) => {
-//   el.addEventListener("mouseleave", (e) => showSkill(e));
-// });
-
-const allSkillsContainer = document.querySelectorAll('.container-skill');
-
-
-allSkillsContainer.forEach(el => {
+allSkillsContainer.forEach((el) => {
   el.addEventListener("mouseenter", (e) => {
-   
-    let spanChild = el.querySelector('.textAbilityHide');
+    let spanChild = el.querySelector(".textAbilityHide");
     console.log(spanChild);
     spanChild.classList.toggle("textShow");
     e.stopPropagation();
-
-
-  })
+  });
 });
 
-allSkillsContainer.forEach(el => {
+allSkillsContainer.forEach((el) => {
   el.addEventListener("mouseleave", (e) => {
-   
-    let spanChild = el.querySelector('.textAbilityHide');
+    let spanChild = el.querySelector(".textAbilityHide");
     console.log(spanChild);
     spanChild.classList.toggle("textShow");
     e.stopPropagation();
-
-
-  })
+  });
 });
-
-
-
-
 
 const scrollUp = document.getElementById("scroll-up");
 
@@ -76,10 +33,13 @@ const burguer = document.getElementById("burguer-menu");
 const ul = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
 const navLink = document.querySelectorAll(".nav-link");
+const ionicon = document.querySelector(".hydrated");
+console.log(burguer);
 
 burguer.addEventListener("click", () => {
   console.log("enferma");
   ul.classList.toggle("show");
+  burguer.classList.toggle(".hide-burguer");
 });
 
 navLink.forEach((link) =>
