@@ -265,9 +265,7 @@ nav ul li {
       text-align: left;
   }
 
-  /* #kinder{
-      text-align: left;
-  } */
+  
 
   .project-pic {
       width: 65%;
@@ -276,7 +274,7 @@ nav ul li {
 
   .sun{
       width: 4vw;
-      /* height: 8vh; */
+     
   }
 
   .projects-container {
@@ -333,6 +331,7 @@ nav ul li {
   #contact{
       background-color: var(--bg-color);
       padding-top:1.5rem;
+      padding-bottom: 5vh;
   }
   
   .contact-form-container {
@@ -408,7 +407,7 @@ nav ul li {
 
 
     footer{
-        /* background-color: var(--bg-color); */
+      
         padding: 1.25rem;
         text-align: center;
         margin: 2rem 0 0;
@@ -453,6 +452,10 @@ nav ul li {
 
     .skills-wrapper{
         column-count: 2;
+    }
+
+    .mainListEducation{
+        padding-left: 15vw;
     }
 
     .firstLink{
