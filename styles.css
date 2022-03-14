@@ -512,6 +512,7 @@ nav ul li {
 
     .navigation.show{
         box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+        padding-top: 25vh;
     }
 
     nav{
