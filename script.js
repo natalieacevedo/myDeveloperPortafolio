@@ -1,23 +1,3 @@
-const allSkillsContainer = document.querySelectorAll(".container-skill");
-
-allSkillsContainer.forEach((el) => {
-  el.addEventListener("mouseenter", (e) => {
-    let spanChild = el.querySelector(".textAbilityHide");
-    console.log(spanChild);
-    spanChild.classList.toggle("textShow");
-    e.stopPropagation();
-  });
-});
-
-allSkillsContainer.forEach((el) => {
-  el.addEventListener("mouseleave", (e) => {
-    let spanChild = el.querySelector(".textAbilityHide");
-    console.log(spanChild);
-    spanChild.classList.toggle("textShow");
-    e.stopPropagation();
-  });
-});
-
 const scrollUp = document.getElementById("scroll-up");
 
 scrollUp.addEventListener("click", () => {

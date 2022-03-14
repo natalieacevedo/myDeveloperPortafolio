@@ -89,11 +89,7 @@ nav h1{
 
 }
 
-.container-skill{
-    width: fit-content;
-    display: inline-block;
-    position: relative;
-}
+
 
 nav a {
     color: var(--primary-color);
@@ -223,11 +219,45 @@ nav ul li {
   }
 
 
+  .container-skill{
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+}
+
 
   .textAbilityHide{
-      display: none;
+      width: fit-content;
+      display: block;
+      position: absolute;
+      top:6%;
+      left:0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      color: var(--primary-color);
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transition: visibility 0s, opacity 0.5s linear; 
+      transition: visibility 0s, opacity 0.5s linear;
+   
+
   } 
 
+  .container-skill:hover{
+      cursor:pointer;
+  }
+
+  .container-skill:hover span{
+      width: fit-content;
+      padding: 8px 15px;
+      visibility: visible;
+      opacity: 0.8;
+      font-size: 0.9rem;
+     
+  }
+
+ 
   
   .textShow{
       
@@ -446,6 +476,11 @@ nav ul li {
 /* media queries: */
 
 @media screen and (max-width: 750px) {
+
+    .container-skill:hover span{
+        font-size: 0.7rem;
+      }
+
     h1{
         font-size: 1.2rem;
     }
@@ -589,6 +624,7 @@ nav ul li {
     }
 
     .hero img {
+        margin-top: 15vh;
         height: 17.5rem;
         object-fit: contain;
         box-shadow: none;
