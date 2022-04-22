@@ -160,16 +160,24 @@ nav ul li {
     background-color: var(--bg-color);
     padding: 1.5rem 17vw;
     text-align: justify;
-    /* column-count: 4; */
+   
+}
+.about-section{
+    background-color: var(--bg-color);
+}
+.journey-title{
+    text-align: center;
+    background-color: var(--bg-color);
+    padding-top:2rem;
 }
 
-.more-about p{
+.more-about {
     margin-top: 0;
     column-count: 3;
     column-width: 250px;
     column-rule: 1px dotted #ccc;
     column-gap: 3rem;
-    text-align: left;
+    text-align: justify;
 }
 
 .bio-title{
@@ -614,6 +622,9 @@ nav ul li {
 }
 
 @media screen and (max-width: 420px){
+    .more-about{
+        white-space: pre-wrap;
+    }
 
     .skills-wrapper{
         column-count: 1;
