@@ -622,9 +622,7 @@ nav ul li {
 }
 
 @media screen and (max-width: 420px){
-    .more-about{
-        white-space: pre-wrap;
-    }
+    
 
     .skills-wrapper{
         column-count: 1;
