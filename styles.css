@@ -302,30 +302,66 @@ nav ul li {
       background-color: var(--bg-color);
       padding: 32px 0;
       margin-top: 2rem;
+      position: relative;
 
   }
 
-  .project-detail{
-      text-align: left;
-  }
-
-  
-
-  .project-pic {
-      width: 65%;
-      height: 60%;
-  }
-
-  .sun{
-      width: 4vw;
+  .left-arrow, .right-arrow{
+      position: absolute;
+      border:none;
+      height: 50%;
+      top:calc(50% -25%);
+      z-index: 500;
+      cursor: pointer;
+      transition: .2s ease all;
      
   }
 
+  .left-arrow{
+      left: 0;
+  }
+
+  .right-arrow{
+      right: 0;
+  }
+
+ .indicators{
+     text-align: center;
+ }
+
+ .indicators button{
+     background-color: var(--primary-shadow);
+     width: .9rem;
+     height: .5rem;
+     cursor: pointer;
+     border: none;
+     margin-right: 2px;
+ }
+  .indicators button:hover{
+      background: red;
+  }
+
+
   .projects-container {
-      display: flex;
+      /* display: flex;
+      align-items: center;
+      justify-content: center; */
+      width: 100%;
+      padding:1.4rem 0;
+      overflow: hidden;
+      scroll-behavior: smooth;
+
+      
+
+  }
+
+.carrousel{
+    display: flex;
       align-items: center;
       justify-content: center;
-  }
+      flex-wrap: nowrap;
+     
+}
 
   .projects-title {
       text-align: center;
@@ -351,6 +387,9 @@ nav ul li {
   }
 
   .project-card {
+      min-width: 20%;
+      transition:.3s ease all;
+
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
@@ -359,7 +398,29 @@ nav ul li {
     /* overflow: scroll; */
     
   }
+
+  .project-card.hover{
+      transform:scale(1.2);
+      transform-origin: center;
+  }
+
+
+
+
+  .project-detail{
+    text-align: left;
+}
   
+
+.project-pic {
+    width: 65%;
+    height: 60%;
+}
+
+.sun{
+    width: 4vw;
+   
+}
   /* contact form */
   
   .contact {
@@ -489,6 +550,25 @@ nav ul li {
 
 /* media queries: */
 
+@media screen and (min-width:750px) and (max-width:1200px){
+
+    .carrousel{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+    }
+
+    .indicators, .right-arrow, .left-arrow{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 750px) {
 
     .container-skill:hover span{
@@ -512,10 +592,6 @@ nav ul li {
     }
 
     .hidden{
-        /* height: 22rem;
-        width: 18rem; */
-        /* overflow: hidden;
-        margin-bottom: 1rem; */
         object-fit: contain;
         
         }
@@ -600,7 +676,17 @@ nav ul li {
     }
 
     .projects-container {
+        overflow: visible;
+
+        /* flex-direction: column; */
+    }
+
+    .carrousel{
         flex-direction: column;
+    }
+
+   .indicators, .right-arrow, .left-arrow{
+        display: none;
     }
 
     .project-container {
