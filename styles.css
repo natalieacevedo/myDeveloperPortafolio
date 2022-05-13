@@ -303,26 +303,29 @@ nav ul li {
       padding: 32px 0;
       margin-top: 2rem;
       position: relative;
+     
 
   }
 
   .left-arrow, .right-arrow{
       position: absolute;
       border:none;
-      height: 50%;
-      top:calc(50% -25%);
+      top:40%;
       z-index: 500;
       cursor: pointer;
       transition: .2s ease all;
-     
+     opacity: 0.8;
+     height: 15%;
+     max-width: 2.5rem;
   }
 
   .left-arrow{
-      left: 0;
+      left: 5%;
+
   }
 
   .right-arrow{
-      right: 0;
+      right: 5%;
   }
 
  .indicators{
@@ -341,19 +344,21 @@ nav ul li {
       background: red;
   }
 
+ .indicators button.active{
+      background-color:var(--secondary-color);
+  }
 
   .projects-container {
-      /* display: flex;
-      align-items: center;
-      justify-content: center; */
-      width: 100%;
+     
+      width: 90%;
       padding:1.4rem 0;
-      overflow: hidden;
+      overflow: scroll;
       scroll-behavior: smooth;
-
-      
+      margin: 0 auto;
 
   }
+
+
 
 .carrousel{
     display: flex;
@@ -368,14 +373,10 @@ nav ul li {
       margin-bottom: 1rem;
   }
 
-  .project-container {
-      text-align: center;
-      width: 21.875rem;
-      padding: 1rem;
-  }
+ 
 
   .project-container p {
-      padding: 0.5rem;
+      padding: 1rem;
   }
 
   .project-title {
@@ -387,20 +388,21 @@ nav ul li {
   }
 
   .project-card {
-      min-width: 20%;
+      min-width: 24%;
       transition:.3s ease all;
-
+      text-align: center;
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
-    /* overflow: scroll; */
+    min-height: 82vh;
+    cursor: pointer;
     
   }
 
   .project-card.hover{
-      transform:scale(1.2);
+      transform:scale(1.11);
       transform-origin: center;
   }
 
