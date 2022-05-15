@@ -34,20 +34,15 @@ const cards = document.querySelectorAll(".project-card");
 const leftArrow = document.getElementById("left-arrow");
 const rightArrow = document.getElementById("right-arrow");
 
-
+console.log(cards);
 
 rightArrow.addEventListener("click", () => {
-
- 
   container.scrollLeft += container.offsetWidth;
   const activeIndicator = document.querySelector(".indicators .active");
   if (activeIndicator.nextSibling) {
     activeIndicator.nextSibling.classList.add("active");
     activeIndicator.classList.remove("active");
   }
- 
- 
-
 });
 
 leftArrow.addEventListener("click", () => {
@@ -63,7 +58,7 @@ leftArrow.addEventListener("click", () => {
 const numberPages = Math.ceil(cards.length / 4);
 let indicatorsContainer = document.querySelector(".indicators");
 
-for (let i = 0; i < numberPages; i++){
+for (let i = 0; i < numberPages; i++) {
   const indicator = document.createElement("button");
   if (i === 0) {
     indicator.classList.add("active");
@@ -73,23 +68,24 @@ for (let i = 0; i < numberPages; i++){
     container.scrollLeft = i * container.offsetWidth;
     document.querySelector(".indicators .active").classList.remove("active");
     e.target.classList.add("active");
-  })
- 
-
+  });
 }
 
 //hover cards///
 
-cards.forEach(card => {
-  card.addEventListener("mouseenter", (e) => {
-    const element = e.currentTarget;
-    console.log(element);
-    setTimeout(() => {
-      cards.forEach(card => card.classList.remove("hover"));
-      element.classList.add("hover");
-    }, 300);
-   
-  })
+cards.forEach((card) => {
+  const sizeWindow = window.screen.width;
+  if (sizeWindow > 1200) {
+    card.addEventListener("mouseenter", (e) => {
+      console.log(sizeWindow);
+      const element = e.currentTarget;
+      console.log(element);
+      setTimeout(() => {
+        cards.forEach((card) => card.classList.remove("hover"));
+        element.classList.add("hover");
+      }, 300);
+    });
+  }
 });
 
 container.addEventListener("mouseleave", () => {

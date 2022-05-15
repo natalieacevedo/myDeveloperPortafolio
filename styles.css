@@ -363,7 +363,7 @@ nav ul li {
 .carrousel{
     display: flex;
       align-items: center;
-      justify-content: center;
+      /* justify-content: center; */
       flex-wrap: nowrap;
      
 }
@@ -405,6 +405,7 @@ nav ul li {
   .project-card.hover{
       transform:scale(1.11);
       transform-origin: center;
+     
   }
 
 
