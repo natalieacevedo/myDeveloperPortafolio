@@ -282,12 +282,7 @@ nav ul li {
     
   }
 
-  .endCard{
-      display: flex;
-      justify-content: space-evenly;
-      align-content: center;
-      align-items: center;
-  }
+ 
   .icon-card{
     background-color: #fff;
     border-radius: 11px;
@@ -362,6 +357,7 @@ nav ul li {
 
 .carrousel{
     display: flex;
+  
       align-items: center;
       /* justify-content: center; */
       flex-wrap: nowrap;
@@ -388,16 +384,18 @@ nav ul li {
   }
 
   .project-card {
-      min-width: 24%;
+      min-width: 23%;
       transition:.3s ease all;
       text-align: center;
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
-    margin: 10px;
+    margin: 1rem;
     min-height: 82vh;
     cursor: pointer;
+    align-self: stretch;
+    position: relative;
    
     
   }
@@ -413,18 +411,38 @@ nav ul li {
 
   .project-detail{
     text-align: left;
+    margin: .8rem auto;
 }
   
 
 .project-pic {
-    width: 65%;
-    height: 60%;
+ width: auto;
+height: auto;
+display: block;
+max-width: 20%;
+max-height: 20%;
+object-fit: contain;
+margin: 1rem auto;
 }
+ .project-pic.fridge{
+     max-width: 50%;
+max-height: 50%;
+ }
 
-.sun{
-    width: 4vw;
-   
-}
+ .project-pic.me{
+     max-width: 35%;
+     max-height: 25%;
+ }
+
+  .endCard{
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+      align-items: center;
+      position: absolute;
+      bottom:1rem;
+      width: 100%;
+  }
 
 /* scroll bar styles */
 
@@ -598,12 +616,20 @@ body::-webkit-scrollbar{
 
     .carrousel{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        /* grid-template-columns: repeat(2,1fr); */
         gap: 1rem;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        grid-auto-rows: 1fr;
+        min-height: 100%;
+       
     }
 
     .indicators, .right-arrow, .left-arrow{
         display: none;
+    }
+
+    .projects-container{
+        overflow: hidden;
     }
 }
 
@@ -614,6 +640,10 @@ body::-webkit-scrollbar{
 
 
 @media screen and (max-width: 750px) {
+
+    .endCard{
+        bottom:.1rem;
+    }
 
     .container-skill:hover span{
         font-size: 0.7rem;
