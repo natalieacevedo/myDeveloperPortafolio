@@ -309,7 +309,7 @@ nav ul li {
       z-index: 500;
       cursor: pointer;
       transition: .2s ease all;
-     opacity: 0.8;
+     opacity: 0.5;
      height: 15%;
      max-width: 2.5rem;
   }
@@ -612,7 +612,7 @@ body::-webkit-scrollbar{
 
 /* media queries: */
 
-@media screen and (min-width:750px) and (max-width:1200px){
+@media screen and (min-width:750px) and (max-width:1300px){
 
     .carrousel{
         display: grid;
@@ -751,6 +751,7 @@ body::-webkit-scrollbar{
 
     .projects-container {
         overflow: visible;
+       
 
         /* flex-direction: column; */
     }
@@ -765,6 +766,8 @@ body::-webkit-scrollbar{
 
     .project-container {
         width: 20.875rem;
+         margin-left: auto;
+        margin-right: auto;
     }
 
     .contact-form-container{
