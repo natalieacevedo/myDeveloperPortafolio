@@ -74,8 +74,8 @@ for (let i = 0; i < numberPages; i++) {
 //hover cards///
 
 cards.forEach((card) => {
-  const sizeWindow = window.screen.width;
-  if (sizeWindow > 1200) {
+ 
+ 
     card.addEventListener("mouseenter", (e) => {
       console.log(sizeWindow);
       const element = e.currentTarget;
@@ -85,7 +85,7 @@ cards.forEach((card) => {
         element.classList.add("hover");
       }, 300);
     });
-  }
+  
 });
 
 container.addEventListener("mouseleave", () => {
