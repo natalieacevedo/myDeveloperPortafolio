@@ -74,20 +74,17 @@ for (let i = 0; i < numberPages; i++) {
 //hover cards///
 
 cards.forEach((card) => {
- 
- 
-    card.addEventListener("mouseenter", (e) => {
-      console.log(sizeWindow);
-      const element = e.currentTarget;
-      console.log(element);
-      setTimeout(() => {
-        cards.forEach((card) => card.classList.remove("hover"));
-        element.classList.add("hover");
-      }, 300);
-    });
-  
+  card.addEventListener("mouseenter", (e) => {
+    console.log(sizeWindow);
+    const element = e.currentTarget;
+    console.log(element);
+    setTimeout(() => {
+      cards.forEach((card) => card.classList.remove("hover"));
+      element.classList.add("hover");
+    }, 300);
+  });
 });
 
 container.addEventListener("mouseleave", () => {
-  cards.forEach(card => card.classList.remove("hover"));
-})
+  cards.forEach((card) => card.classList.remove("hover"));
+});

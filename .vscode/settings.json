@@ -1,4 +1,10 @@
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "html.format.enable": false
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "html.format.enable": true,
+  "[html]": {
+    "editor.linkedEditing": true
+  },
+  "liveSassCompile.settings.autoprefix": [],
+  "html.format.contentUnformatted": "",
+  "liveServer.settings.port": 5501
 }
