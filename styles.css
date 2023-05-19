@@ -330,7 +330,7 @@ nav ul li {
   margin-bottom: 1rem;
 }
 
-.project-container p {
+.project-card p {
   padding: 1rem;
 }
 
@@ -354,6 +354,8 @@ nav ul li {
   cursor: pointer;
   align-self: stretch;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card.hover {
@@ -689,11 +691,11 @@ textarea {
     display: none;
   }
 
-  .project-container {
+  /* .project-container {
     width: 20.875rem;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
   .contact-form-container {
     max-width: 23.75rem;
@@ -733,9 +735,9 @@ textarea {
     margin-top: 1rem;
   }
 
-  .project-container {
+  /* .project-container {
     width: 17.875rem;
-  }
+  } */
 
   .contact-form-container {
     max-width: 17.75rem;
