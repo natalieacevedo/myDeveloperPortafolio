@@ -67,19 +67,26 @@
                 electrons through an algorithm to accomplish an objective is indistinguishable from magic.
             </p>
             <p>
-                Three years ago, I finally had the opportunity to learn computer science and pursue a career in
-                programming; as a result of my recent move from California, where I had little free time.
+                A few years ago, I finally had the opportunity to learn computer science and pursue a career in
+                programming; as a result of my recent move from California to Spain.
             </p>
-            <p>I started by reading a book by one of the creators of CSS, Jennifer Niederst Robbins <cite>Learning Web
+            <p>I started my Journey by reading a book by one of the creators of CSS, Jennifer Niederst Robbins
+                <cite>Learning Web
                     Design</cite>. The book captured my attention from start to finish. As I was reading it, I looked
-                online for exercises to practice. The author recommended Codecademy, and people on Reddit raved about
-                FreeCodeCamp. I decided to take on both in parallel, along with some Udemy courses.</p>
+                online for exercises to practice, the author recommended Codecademy, and people on the internet raved
+                about
+                FreeCodeCamp. I decided to take on both in parallel, along with some Udemy courses.
+            </p>
 
-            <p>Their curriculum was well-structured. It was light enough for someone without programming experience to
-                follow. However, the introductory courses were unrealistic, as they held my hand the entire time. They
-                were good enough to get started, but as I was about to discover, real-world programming rarely follows
+            <p>These courses have a very well-structured curriculum. They were light enough for someone without
+                programming
+                experience to
+                follow; however, the introductory courses were unrealistic, as they held my hand the entire time. They
+                are good resources to get started, but as every programmer knows, real-world programming rarely
+                follows
                 such a straight line.</p>
-            <p>For two years I focused on learning the essentials: HTML, CSS and JavaScript. I decided to spend a lot of
+            <p>For two years during covid I focused on learning the essentials: HTML, CSS and JavaScript. I decided to
+                spend a lot of
                 time understanding the in and outs of these three foundational technologies, because even when using the
                 fanciest frameworks and libraries they are the backbone of the World Wide Web.</p>
 
@@ -167,44 +174,54 @@
         <div class="projects-container">
 
             <div class="carrousel">
+                <!-- refactor card: -->
                 <div class="project-card">
-                    <img src="assets/clarita_logo_no_background.png" alt="quiz" loading="lazy"
-                        class="project-pic sun" />
+
+                    <div class="image-container"><img src="assets/clarita_logo.jpg" width="300" height="300" alt="quiz"
+                            loading="lazy" class="project-pic" />
+                    </div>
+
                     <h3 class="project-title">Clarita Web Gallery</h3>
+
                     <p class="project-detail">
-                        I created this project from scratch using typeScript and react Js.<br><br>
-                        This game is the final solo project for the 11 hours Scrimba <a
-                            href="https://scrimba.com/learn/learnreact">React
-                            bootcamp </a>by Bob Ziroll.
-
-                        This great React course is filled with coding challenges and the teacher is excellent.
+                        I am the main developer and maintainer of the Clarita Web Gallery, an open-source web
+                        application to navigate <a href="https://www.digikam.org/" class="project-link">digiKam</a>
+                        photo collections. digiKam is an open-source photo management tool that only has a desktop
+                        application, Clarita is a web
+                        UI that usesdigiKam’s database and
+                        metadata.
                         <br><br>
-                        Along with the main project, I built eight smaller ones during the course.
+                        I created the entire front-end from scratch with the guidance of the senior developer who leads
+                        the project. The
+                        front-end is a Typescript React SPA, with a FastAPI Python backend.
                         <br><br>
-                        No libraries or external resources were used either, just React, Javascript, naturally, and
-                        SASS.<br><br>
-
-
+                        Styles use SASS. We are working towards releasing an MVP soon, with many features planned down
+                        the pipeline.
+                        <br><br>
+                        I look forward to presenting and discussing this project with you.
+                        <br><br>
                     </p>
+
+
                     <div class="endCard">
-                        <a href="https://github.com/natalieacevedo/quizzical/blob/main/README.md" class="project-link"
+                        <a href="https://github.com/claritagallery/clarita-react-frontend" class="project-link"
                             target="_blank"><img src="assets/githubSource.png" title="Source code"
                                 alt="github logo"></a><br>
 
-                        <a href="https://natalieacevedo.github.io/quizzical/" class="project-link" target="_blank">Check
-                            it out</a>
+
                     </div>
 
                 </div>
 
                 <div class="project-container project-card">
-                    <img src="assets/Logo.png" alt="kinderBday-logo" loading="lazy" class="project-pic sun" />
+                    <div class="image-container"><img src="assets/Logo.png" alt="kinderBday-logo" loading="lazy"
+                            class="project-pic sun" width="500" height="500" /></div>
+
                     <h3 class="project-title">KinderBday</h3>
                     <p class="project-detail" id="kinder">
 
                         Together with four other developers, I created an app from scratch where the host of a party,
-                        usually a children's one, can share with guests what they want as a gift; in this way, the child
-                        can receive a more meaningful present.  
+                        usually a children's one, can share with guests what they want as a gift.  
 
                         <br><br>
 
@@ -226,26 +243,21 @@
                 </div>
 
                 <div class="project-container project-card">
-                    <img src="assets/fridge.png" alt="fridge-logo" loading="lazy" class="project-pic fridge"
-                        id="fridge" />
-
+                    <div class="image-container"><img src="assets/fridge.png" alt="fridge-logo" loading="lazy"
+                            class="project-pic fridge" id="fridge" width="500" height="500" /></div>
+                    <h3 class="project-title">What's in your fridge?</h3>
                     <p class="project-detail">
                         Our goal with this project was to practice all the features of React. When you come from a
-                        vanilla Javascript background, developing a "react-mindset" takes practice. This project enabled
-                        us to do that effectively.<br><br>
+                        vanilla Javascript background, developing a "react-mindset" takes practice.<br><br>
                         Most of the App's functionality and architecture were developed by me. CSS and Bootstrap were
                         implemented for the layout.<br><br>
 
-
-
                         The purpose of the App is to provide users with a website where they can enter what ingredients
-                        are in their fridge.
+                        are in their fridge. The application then returns a list of recipes based on their input.
+                        <br><br>
+                        the App also lists the ingredients that are missing from the recipe.
 
-                        In return, the application will provide them a list of recipes based on their input. <br><br>
-                        In addition, the App lists the ingredients that are missing from the recipe, along with a link
-                        to where to buy them.
-
-                        Users can also save their favorite recipes in the browser's local storage for later reference.
+                        Users can save their favorite recipes in the browser's local storage for later reference.
                     </p>
                     <div class="endCard">
                         <a href="https://github.com/natalieacevedo/what-s-in-your-fridge" class="project-link"
@@ -261,7 +273,9 @@
 
 
                 <div class="project-container project-card">
-                    <img src="assets/quizworld.png" alt="quiz" loading="lazy" class="project-pic sun" />
+                    <div class="image-container"><img src="assets/quizworld.png" alt="quiz" loading="lazy"
+                            class="project-pic" width="500" height="500" /></div>
+
                     <h3 class="project-title">Quizzical</h3>
                     <p class="project-detail">
                         This project uses trivia questions from <a href="https://opentdb.com/">Open Trivia Database
@@ -292,7 +306,8 @@
                 </div>
 
                 <div class="project-container project-card">
-                    <img src="assets/die.png" alt="headspuzzle" loading="lazy" class="project-pic sun" />
+                    <div class="image-container"><img src="assets/die.png" alt="headspuzzle" loading="lazy"
+                            class="project-pic" width="500" height="500" /></div>
                     <h3 class="project-title">Tenzies Game</h3>
                     <p class="project-detail">
                         I've had a lot of fun creating this little game. It's amazing how complex even a simple
@@ -320,7 +335,8 @@
 
                 </div>
                 <div class="project-container project-card">
-                    <img src="assets/puzzle-head.png" alt="headspuzzle" loading="lazy" class="project-pic sun" />
+                    <div class="image-container"><img src="assets/puzzle-head.png" alt="headspuzzle" loading="lazy"
+                            class=" project-pic head-puzzle" width="500" height="500" /></div>
                     <h3 class="project-title">How shy are you?</h3>
                     <p class="project-detail">
                         As part of a company's hiring process, I completed a personality test in three days.<br><br>
@@ -349,7 +365,8 @@
 
 
                 <div class="project-container project-card">
-                    <img src="assets/me.jpeg" alt="headspuzzle" loading="lazy" class="project-pic me" />
+                    <div class="image-container"><img src="assets/me.jpeg" alt="student" loading="lazy"
+                            class="project-pic me" width="500" height="500" /></div>
                     <h3 class="project-title">This portfolio</h3>
                     <p class="project-detail">
                         I feel a bit meta writing about this portfolio, but I worked hard on it, so it deserves to
@@ -397,7 +414,16 @@
                 </li>
 
             </ul>
+            <li class="school-name">Scrimba</li>
+            <ul>
+                <li>Advanced React</li>
+                <li> <a href="./files/CERTIFICATE OF COMPLETION - Advanced React.pdf">See
+                        certificate</a>
+                </li>
+            </ul>
+            </li>
             <li class="school-name">FreeCodeCamp </li>
+
             <ul>
                 <li>Javascript Algorithms and Data Structures Certification, 300+ hours, remote </li>
                 <li> <a
