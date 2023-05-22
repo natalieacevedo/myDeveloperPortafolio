@@ -1,4 +1,4 @@
-# myDeveloperPortafolio
+# myDeveloperPortfolio
 
 > This is my personal website, I created it with JavaScript, CSS and HTML. 
 I chose not to use React and bootstrap for this project since I wanted to practice my vanilla JavaScript and CSS skills.
